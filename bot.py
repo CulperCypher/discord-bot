@@ -1,12 +1,8 @@
 import discord
 from openai import OpenAI
-from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env
-load_dotenv()
-
-# Access API keys from environment variables
+# Get API keys from environment variables
 openai_api_key = os.getenv("OPENAI_API_KEY")
 discord_token = os.getenv("DISCORD_BOT_TOKEN")
 
